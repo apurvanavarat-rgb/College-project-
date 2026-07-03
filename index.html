@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Result Analysis Portal</title>
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+     body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, white 30%, #2575fc 30%);
+}
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    background:linear-gradient(135deg,#030351,#203A43,#380478);
+}
+
+.login-box{
+    width:400px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.logo{
+    text-align:center;
+    font-size:32px;
+    font-weight:bold;
+    color:#040230;
+    margin-bottom:10px;
+}
+
+.sub{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin:12px 0 6px;
+    font-weight:bold;
+    color:#333;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:8px;
+    padding:0 12px;
+    margin-bottom:15px;
+    background:#fff;
+}
+
+.input-box i{
+    color:#0b5ed7;
+    font-size:18px;
+    margin-right:10px;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    padding:12px 0;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:13px;
+    margin-top:10px;
+    background:#060458;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+    input:focus{
+    outline:none;
+    border:2px solid #0b5ed7;
+    box-shadow:0 0 8px rgba(11,94,215,0.3);
+}
+}
+
+button:hover{
+    background:#084298;
+}
+
+.footer{
+    margin-top:18px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+    
+
+<div class="login-box">
+
+<div class="logo">UniFilter</div>
+<div class="sub">College Result Analysis Portal</div>
+
+<label>Email</label>
+
+<div class="input-box">
+    <i class="fa-solid fa-envelope"></i>
+    <input type="email" id="email" placeholder="teacher@example.com">
+</div>
+<label>Password</label>
+
+<div class="input-box">
+    <i class="fa-solid fa-lock"></i>
+    <input type="password" id="password" placeholder="Enter Password">
+</div>
+
+<button onclick="login(window.location.href="dashboard.html";)">
+Login
+
+</button>
+
+<div class="footer">
+Only Authorized Teachers
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+let email=document.getElementById("email").value;
+let password=document.getElementById("password").value;
+
+if(email=="" || password==""){
+alert("Please enter Email and Password");
+}
+else{
+
+window.location.href="dashboard.html";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+
+<script>
+function login() {
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(email=="" || password==""){
+        alert("Please enter Email and Password");
+    }else{
+        window.location.href="dashboard.html";
+    }
+
+}
+</script>
